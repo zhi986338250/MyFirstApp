@@ -1,0 +1,5 @@
+"project.private.config.json" 
+"project.private.*.json" 
+".vscode/" 
+"*.log" 
+"logs/" 
