@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!-- pages/index/index.wxml -->
 <view class="container">
   <view class="userinfo">
     <text class="title">欢迎使用我的小程序！</text>
@@ -9,7 +9,6 @@
     <button bindtap="clickButton">点击我</button>
     <text class="message">{{message}}</text>
     
-    <!-- 显示点击历史 -->
     <view class="history-section" wx:if="{{clickHistory.length > 0}}">
       <text class="history-title">点击历史：</text>
       <view class="history-list">
