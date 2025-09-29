@@ -1,0 +1,20 @@
+# 小程序相关
+*.log
+logs/
+.mini/
+.project/
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 开发工具相关
+.svn/
+node_modules/
+dist/
+build/
+
+# 系统文件
+Thumbs.db
+desktop.ini
