@@ -1,4 +1,4 @@
-<!-- pages/index/index.wxml -->
+<!-- 在原有内容后添加跳转按钮 -->
 <view class="container">
   <view class="userinfo">
     <text class="title">欢迎使用我的小程序！</text>
@@ -17,5 +17,8 @@
         </view>
       </view>
     </view>
+    
+    <!-- 添加跳转到日志页面的按钮 -->
+    <button class="log-btn" bindtap="goToLogs">查看完整日志</button>
   </view>
 </view>

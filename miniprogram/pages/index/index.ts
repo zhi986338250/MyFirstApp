@@ -12,7 +12,8 @@ Page({
   },
 
   onShow() {
-    console.log('页面显示了');
+    // 页面显示时重新加载历史记录，以反映其他页面的更改
+    this.loadClickHistory();
   },
 
   updateTime() {
@@ -45,6 +46,7 @@ Page({
       clickHistory: history
     });
     
+    // 保存到本地存储
     wx.setStorageSync('clickHistory', history);
   },
 
@@ -59,5 +61,11 @@ Page({
     
     this.updateTime();
     this.saveClickHistory(newMessage);
-  }
+  },
+  
+  goToLogs() {
+  wx.navigateTo({
+    url: '/pages/logs/logs'
+  });
+}
 });
